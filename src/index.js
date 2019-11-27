@@ -1,9 +1,10 @@
-import { message, messageDOM } from './tools/message';
-import './components/footer'
+/*
+import { message, messageDOM } from './js/message';
 import info from './data/title.txt';
-import './sass/index.scss';
-import addImage from './tools/image';
-import Creator from './tools/creator';
+
+import addImage from './js/image';
+
+import Creator from './js/creator';
 
 message(info);
 messageDOM(info);
@@ -17,4 +18,9 @@ const e3 = new Creator();
 e3.addBgc();
 e3.showColor()
 
-// let promise = new Promise(function (resolve, reject) { resolve("ok") });
+let promise = new Promise(function (resolve, reject) { resolve("ok") });
+*/
+
+import './sass/main.scss';
+
+

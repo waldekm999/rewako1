@@ -1,1 +1,3 @@
-Witaj, serwerze dewolperski!!!!!
+Tutaj można umieścić plik tekstowy który będzie
+ imortowany do HTML poprzez moduł message.js
+
