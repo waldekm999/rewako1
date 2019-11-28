@@ -88,7 +88,7 @@ module.exports = {
       title: "nowa aplikacja",
       minify: {
         collapseWhitespace: true
-      }
+      }     
     }),
     new MiniCssExtractPlugin({
       filename: '[name]-[contenthash].css'
