@@ -1,1 +1,15 @@
-@import '../base/base'
+@import '../base/base';
+
+
+
+@mixin mq($breakpoint) {
+    $size: map-get($map: $breakpoints, $key: $breakpoint);
+        @if($size) {
+            @media #{$size} {
+                @content;
+            }
+        }
+        @else {
+            @error '"#{$breakpoint}" - Nie ma takiej wielkości';
+        }
+}
