@@ -1,6 +1,11 @@
 @import '../base/base';
 
 .main-page__header {
-      display: grid;
-   
+      display: grid;   
+}
+
+.main-page__header__faker {
+      width: 100vw;
+      height: 100vh;
+      visibility: hidden;      
 }

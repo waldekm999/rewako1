@@ -3,8 +3,9 @@
 .main-page__header__slider {
     width: 100vw;
     height: 100vh;
-       
-
+    position: fixed;
+    top: 0; 
+    z-index: -1;     
 
     &__img {
         height: 100%;
