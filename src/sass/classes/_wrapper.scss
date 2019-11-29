@@ -2,4 +2,9 @@
 
 .wrapper {
     width: 100%;
+
+
+    &__articles {
+        margin-top: 100vh;
+    }
 }

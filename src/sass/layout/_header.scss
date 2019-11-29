@@ -1,11 +1,6 @@
 @import '../base/base';
 
 .main-page__header {
-    width: 100%;
-    height: 50px;
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    z-index: 100;
+      display: grid;
+   
 }
