@@ -1,6 +1,24 @@
 @import './base/base';
 
-img {
-    width: 100%;
-    max-width: 300px;
-  }
+// ------ classes ----------------------------
+
+@import './classes/wrapper';
+
+// ----- components --------------------------
+
+@import './components/_slider';
+@import './components/_navbar';
+
+// ----- layout ------------------------------
+
+@import './layout/article';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/section';
+
+// ----- utils -------------------------------
+
+@import './utils/animations';
+@import './utils/mixins';
+
+

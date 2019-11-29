@@ -1,1 +1,8 @@
 @import '../base/base';
+
+.main-page {
+    width: 100%; 
+    
+    display: flex;
+    flex-direction: column;
+}
