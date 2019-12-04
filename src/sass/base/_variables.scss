@@ -5,6 +5,17 @@ $breakpoints: (
     large: (min-width: 1900px),        
 );
 
-$base-font-size: 1.8vmin;
+$base-font-size: 3vmin;
 
-$base-padding: 10px;
+$base-padding: 1rem;
+$base-margin: 2rem;
+
+// ------------- colors ----------------
+$base-background: #fff;
+
+$main-color: #448d76;
+$main-color-light: #d4f7ec;
+$dark-color: #340926;
+$yellow-color: #fcba12;
+$red-color: #ae0d7a;
+
