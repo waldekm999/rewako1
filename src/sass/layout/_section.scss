@@ -1,21 +1,24 @@
 @import '../base/base';
 @import '../utils/mixins';
 
+
+
 .main-page {
     width: 100%;     
     display: flex;
     flex-direction: column;
 
-    &__article {
+    &__article {        
         background-color: $base-background;
         margin: 0;
         font-size: $base-font-size;
-        padding: $base-padding ; 
+        padding: $base-padding ;
+        text-align: justify; 
         display: flex;
         flex-direction: column;
 
         @include mq(medium) {
-            padding: $base-padding *3 $base-padding *3;
+            padding: $base-padding *3;
             flex-direction: row;            
         }
                      
@@ -37,11 +40,20 @@
                     height: auto;
                 }
             }
-    }
+    }    
 
     .reversed {
         @include mq(medium) {
             flex-direction: row-reverse;            
         }
     }
+
+        .darken {        
+        background-color: $main-color;
+              
+     }   
+
+    
 }
+
+
