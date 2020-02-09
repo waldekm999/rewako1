@@ -3,8 +3,9 @@
 .footer {
     width: 100%;
 
-    &__social-networks {
-        height: 35vh;
+    &__social-networks { 
+        width: 100%;      
+        min-height: 35vh;        
         background-color: $main-color;
     }
 
