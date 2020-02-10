@@ -1,5 +1,6 @@
 
 ------------------------------------ dlaczego my -----------------------------------
+8 lat na rynku
 
 globe-europe - MBezpieczne dla środowiska
 <i class="fas fa-recycle"></i>
@@ -92,7 +93,9 @@ social media
 <i class="fab fa-google-plus-square"></i>
 
  
+kalkulator
 
+<i class="fas fa-calculator"></i>
 
 
 
