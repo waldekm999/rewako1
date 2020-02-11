@@ -51,7 +51,7 @@
         }
     }
 
-        .darken {        
+    .darken {        
         background-color: $main-color;  
         color: $main-color-light;   
         
@@ -59,7 +59,45 @@
             color: $main-color-light;
             text-shadow: $text-shadow-black;
         }
-     }   
+    }   
+
+    .icon-text {
+        display: flex;
+        position: relative;
+        flex-direction: column;   
+        text-align: center;        
+        transition: ease-out 0.8s;
+        
+        &__text{
+            margin-top: $base-margin;
+        }
+
+        &:hover{
+            cursor: pointer;
+            transform: rotateY(180deg); 
+            color: $main-color;                                
+        }
+    }
+
+    .text-hidden{        
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100%;       
+        font-size: $base-font-size * 0.6; 
+        color: $main-color; 
+        transform: rotateY(180deg);
+        transition: ease-in 0.5s;  
+        z-index: -10;      
+        &:hover{
+            color: white;
+            z-index: 10;
+            border: 3px solid white;
+            border-radius: 20px;
+        }
+                        
+    }
 
     
 }
