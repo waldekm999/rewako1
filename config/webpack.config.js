@@ -55,5 +55,9 @@ module.exports = {
       template: "src/templates/template.html",
       title: "nowa aplikacja"
     }),
+    new HtmlWebpackPlugin({
+      filename: 'strip-courtains.html',
+      template: 'src/templates/strip_courtains.html'
+    })
   ]
 }
