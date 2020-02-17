@@ -3,9 +3,16 @@
 @import './colors';
 
 
+
 .fas, .fab, .far{
-    font-size: $base-font-size * 2;
+    font-size: $base-font-size * 4;
 }
+
+.medium-icon {
+    font-size: $base-font-size * 2.5;
+}
+
+
 
 .fa-facebook-f {
     color: rgb(22, 22, 236);  

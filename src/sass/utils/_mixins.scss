@@ -13,3 +13,9 @@
             @error '"#{$breakpoint}" - Nie ma takiej wielkości';
         }
 }
+
+@mixin border($width, $color, $rounding) {
+    border: $width solid darken($color: $color, $amount: 10%);
+            border-radius: $rounding;
+    
+}

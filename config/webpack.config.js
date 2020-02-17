@@ -53,7 +53,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "src/templates/template.html",
-      title: "nowa aplikacja"
+      title: "Kurtyny Paskowe Rewako"
     }),
     new HtmlWebpackPlugin({
       filename: 'strip-courtains.html',

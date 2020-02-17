@@ -85,7 +85,14 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "src/templates/template.html",
-      title: "nowa aplikacja",
+      title: "Kurtyny Paskowe Rewako",
+      minify: {
+        collapseWhitespace: true
+      }     
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'strip-courtains.html',
+      template: 'src/templates/strip_courtains.html',
       minify: {
         collapseWhitespace: true
       }     
