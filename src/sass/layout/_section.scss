@@ -19,7 +19,7 @@
 
         @include mq(medium) {
             
-            padding: $base-padding  $base-padding *15 $base-padding*8;
+            padding: $base-padding  $base-padding *10 $base-padding *6;
             flex-direction: row;
             align-items: flex-end;
                              
@@ -64,7 +64,7 @@
     .extend{
 
         font-size: $base-font-size * 0.7;
-        color: $dark-color;
+        color: $main-color-light;
         text-shadow: $text-shadow-grey;
         
 
@@ -123,7 +123,7 @@
     
 }
 
-.temporary {
+.rotation {
     position: relative;
     text-align: center;
     
@@ -131,13 +131,13 @@
 
 
 
-div.temporary:hover div {
+div.rotation:hover div {
     cursor: pointer;
             transform: rotateY(180deg); 
             color: $main-color;   
 }
 
-div.temporary:hover span {
+div.rotation:hover span {
             color:$main-color-light;
             background-color: $main-color-light;
             z-index: 10;
@@ -151,10 +151,12 @@ div.temporary:hover span {
     color: $dark-color;
 }
 
-.fold{  
+
+.extended{  
     max-height: 0px;    
    visibility: hidden;
 }
+
 
 
 
