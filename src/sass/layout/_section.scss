@@ -43,7 +43,20 @@
                     height: auto;
                 }
             }
-    }    
+    }  
+    
+    &__gallery {
+        height: 80vh;
+        background-color: white;
+        display: none;        
+
+        @include mq(small) {
+            display: grid;
+            grid-template-columns: repeat(24, 1fr);
+            grid-template-rows: repeat(12,1fr);
+        }
+        
+    }
 
     .reversed {
         @include mq(medium) {
@@ -60,6 +73,33 @@
             text-shadow: $text-shadow-black;
         }
     } 
+    .icon-text {
+        display: flex;
+        position: relative;
+        flex-direction: column;   
+        text-align: center;             
+        transition: ease-out 0.5s;    
+        
+        &__text{
+            margin-top: $base-margin;
+        }      
+       
+    }
+
+    .text-hidden{        
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100%;    
+        text-align: justify;   
+        font-size: $base-font-size * 0.6;        
+        color: $main-color; 
+        transform: rotateY(180deg);
+        transition: ease-in 0.5s;  
+        z-index: -10;         
+                        
+    }
 
     .extend{
 
@@ -76,7 +116,7 @@
            box-shadow: $box-shadow-black;
            margin-top: $base-margin * 0.25;           
 
-           &:hover{
+           &:hover{                       
             text-shadow: none;
             box-shadow: none; 
             font-weight: bold;
@@ -86,40 +126,7 @@
            }
         }
     }
-
-   
     
-    
-
-    .icon-text {
-        display: flex;
-        position: relative;
-        flex-direction: column;   
-        text-align: center;        
-        transition: ease-out 0.5s;
-        
-        
-        
-        &__text{
-            margin-top: $base-margin;
-        }      
-
-       
-    }
-
-    .text-hidden{        
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        width: 100%;
-        height: 100%;       
-        font-size: $base-font-size * 0.6;        
-        color: $main-color; 
-        transform: rotateY(180deg);
-        transition: ease-in 0.5s;  
-        z-index: -10;         
-                        
-    }
     
 }
 
@@ -133,17 +140,21 @@
 
 div.rotation:hover div {
     cursor: pointer;
-            transform: rotateY(180deg); 
+            transform: rotateY(180deg);                                
+            /*
             color: $main-color;   
+            zmiana 09.03
+            */
+            
 }
 
-div.rotation:hover span {
-            color:$main-color-light;
-            background-color: $main-color-light;
+div.rotation:hover span {            
+            background-color: $main-color-light;                      
             z-index: 10;
-            @include border(3px, $main-color-light, 50px);            
+            @include border(3px, $main-color-light, 20px);            
             box-shadow: $box-shadow-black;
-            color:$dark-color;
+            color:$dark-color
+           
 }
 
 .lighten{

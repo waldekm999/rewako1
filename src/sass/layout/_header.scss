@@ -45,7 +45,9 @@
         }
 
         &__slogan {                
-                font-size: $base-font-size * 2;                
+                font-size: $base-font-size * 2; 
+                justify-self: center;
+                align-self: center;               
                 grid-column: 2 / 6;
                 grid-row: 4/ 6;
                 color: $main-color;
