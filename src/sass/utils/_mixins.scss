@@ -17,5 +17,10 @@
 @mixin border($width, $color, $rounding) {
     border: $width solid darken($color: $color, $amount: 10%);
             border-radius: $rounding;
-    
+}
+
+@mixin imageSize($x, $y) {
+    z-index: 10;
+    box-shadow: $box-shadow-black;
+    transform: scale(2,2) translate($x, $y);    
 }
