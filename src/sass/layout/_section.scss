@@ -64,9 +64,13 @@
         }
     }
 
-    .darken {        
-        background-color: $main-color;  
+    .darken {  
+             
+        background-color: $main-color;                  
         color: $main-color-light;   
+        /*
+        background-image: linear-gradient(to bottom right, $main-color, $dark-color);
+        */
         
         &>h2{
             color: $main-color-light;
