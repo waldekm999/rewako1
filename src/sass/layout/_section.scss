@@ -7,7 +7,9 @@
     width: 100%;     
     display: flex;
     flex-direction: column;
+    
     background-color: $base-background;
+    
 
     &__section {                
         margin: 0;
@@ -54,6 +56,7 @@
             display: grid;
             grid-template-columns: repeat(24, 1fr);
             grid-template-rows: repeat(12,1fr);
+            padding: $base-padding * 2;
         }
         
     }
@@ -64,17 +67,17 @@
         }
     }
 
-    .darken {  
-             
-        background-color: $main-color;                  
-        color: $main-color-light;   
-        /*
-        background-image: linear-gradient(to bottom right, $main-color, $dark-color);
-        */
+    .darken {        
+        color: $main-color-light;           
+        background-image: linear-gradient(to bottom right, $main-color, lighten($main-color, 20));        
         
         &>h2{
             color: $main-color-light;
             text-shadow: $text-shadow-black;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto; 
+            margin-bottom: 20px;
         }
     } 
     .icon-text {
@@ -162,8 +165,9 @@ div.rotation:hover span {
 }
 
 .lighten{
-    background-color: $main-color-light;
+    
     color: $dark-color;
+    background-image: linear-gradient(to bottom right, $main-color-light, lighten($main-color, 50));
 }
 
 
