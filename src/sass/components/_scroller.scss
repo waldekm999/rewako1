@@ -1,0 +1,27 @@
+@import '../base/base';
+
+.scroller {
+    /*
+    background: url(./images/up.png) no-repeat 0px 0px;
+    */    
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 100;    
+    visibility: hidden; 
+    transition: 0.4s; 
+
+    
+    &:hover{
+       
+       cursor: pointer;
+       transform: scale(1.5, 1.5);
+    }
+
+    &>image{
+        width: 100%;
+        height: 100%;
+    }
+}

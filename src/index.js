@@ -1,3 +1,12 @@
+
+import {hideEndShow, toUp} from './js/scroller';
+const scroller = document.querySelector('.scroller');
+
+document.addEventListener('scroll', hideEndShow);
+scroller.addEventListener('click', toUp );
+
+
+
 /*
 import { message, messageDOM } from './js/message';
 import info from './data/title.txt';
@@ -20,6 +29,8 @@ e3.showColor()
 
 let promise = new Promise(function (resolve, reject) { resolve("ok") });
 */
+
+
 
 import './sass/main.scss';
 
