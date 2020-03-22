@@ -15,14 +15,17 @@
     } 
     
     &__icon{                      
-        transition: 0.5s;        
-
-        &-off{
-            color: rgb(168, 63, 63);
+        transition: 0.5s;   
+        color: $dark-color;     
+        /*
+        &-off{         
+            color: rgb(168, 63, 63);           
+            color: $yellow-color;                   
         }
-        &-on{
-            color: $yellow-color;
+        &-on{           
+            color: $yellow-color;           
         }
+        */
 
         &:hover{
             cursor: pointer;

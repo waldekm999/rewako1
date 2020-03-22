@@ -13,7 +13,8 @@
     flex-direction: column;
     transition: 1s;    
     
-    &__item {        
+    &__item {    
+        transition: 1s;    
         padding: $base-padding  $base-padding  * 2 ;          
         text-decoration: none; 
         color: white;
@@ -23,7 +24,7 @@
         display: none;
         
         @include mq(small){       
-        display: block;
+            display: block;
         }   
     }    
 
@@ -55,3 +56,9 @@
     }
 }
 
+.green{    
+    background-color: $main-color;
+    @include mq(small){
+        background-color: inherit;
+    }
+}
