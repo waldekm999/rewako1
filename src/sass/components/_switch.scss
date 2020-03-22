@@ -1,0 +1,35 @@
+@import '../base/base';
+@import '../utils/mixins';
+
+.switch{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 70px;
+    height: 40px;
+    z-index: 2000;  
+    
+
+    @include mq(small){
+        display: none;
+    } 
+    
+    &__icon{                      
+        transition: 0.5s;        
+
+        &-off{
+            color: rgb(168, 63, 63);
+        }
+        &-on{
+            color: $yellow-color;
+        }
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(0.95, 0.95);
+        }
+
+    }
+    
+}
+

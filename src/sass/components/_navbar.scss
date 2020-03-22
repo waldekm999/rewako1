@@ -14,19 +14,22 @@
     transition: 1s;    
     
     &__item {
-        padding: $base-padding * 0.1  $base-padding  * 2 ;          
+        padding: $base-padding  $base-padding  * 2 ;          
         text-decoration: none; 
         color: white;
         font-size: $base-font-size *1.5;       
-        text-shadow: $text-shadow-black;             
+        text-shadow: $text-shadow-black; 
+        align-self: center;
+        visibility: hidden;
+        @include mq(small){       
+        visibility: visible;
+        }   
     }    
 
     @include mq(small) {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        
-        
 
         &__item {             
             font-size: $base-font-size ;   
@@ -50,3 +53,4 @@
         width: 100%;
     }
 }
+
