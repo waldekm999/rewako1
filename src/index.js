@@ -1,10 +1,16 @@
 
+//imports ----------------------------------------------
 import {hideEndShow, toUp} from './js/scroller';
-const scroller = document.querySelector('.scroller');
+import {extending} from './js/extending';
 
+//DOM --------------------------------------------------
+const scroller = document.querySelector('.scroller');
+const extend = document.querySelector('.btn-extending');
+
+//events ------------------------------------------------
 document.addEventListener('scroll', hideEndShow);
 scroller.addEventListener('click', toUp );
-
+extend.addEventListener('click', extending);
 
 
 /*
