@@ -1,5 +1,6 @@
 const html = document.documentElement;
 const body = document.body;
+const navItem = document.querySelector('.navbar__item');
 
 const scroller = document.querySelector('.scroller');
 const map = document.querySelector('.map');
@@ -12,8 +13,10 @@ export const hideEndShow = () => {
         navbar.style.backgroundColor = "";
     } else {
         scroller.style.visibility = "visible";
-        map.style.visibility = "visible";
-        navbar.style.backgroundColor = "#448D76";
+        map.style.visibility = "visible";        
+        navbar.style.backgroundColor = "#448D76";               
+        window.innerWidth < 900  ? navbar.style.backgroundColor = "" : navbar.style.backgroundColor = "#448D76";
+       
     }   
 }
 

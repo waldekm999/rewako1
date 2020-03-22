@@ -2,15 +2,21 @@
 //imports ----------------------------------------------
 import {hideEndShow, toUp} from './js/scroller';
 import {extending} from './js/extending';
+import {switchMenu} from './js/switch';
 
 //DOM --------------------------------------------------
 const scroller = document.querySelector('.scroller');
 const extend = document.querySelector('.btn-extending');
+const switcher = document.querySelector('.switch');
 
 //events ------------------------------------------------
 document.addEventListener('scroll', hideEndShow);
 scroller.addEventListener('click', toUp );
 extend.addEventListener('click', extending);
+switchMenu();
+switcher.addEventListener('click', switchMenu);
+
+
 
 
 /*
