@@ -3,6 +3,7 @@
 import {hideEndShow, toUp} from './js/scroller';
 import {extending} from './js/extending';
 import {switchMenu} from './js/switch';
+//import {sliderShow} from './js/slider';
 
 //DOM --------------------------------------------------
 const scroller = document.querySelector('.scroller');
@@ -13,8 +14,11 @@ const switcher = document.querySelector('.switch');
 document.addEventListener('scroll', hideEndShow);
 scroller.addEventListener('click', toUp );
 extend.addEventListener('click', extending);
+if(window.innerWidth < 760)  {
 switchMenu();
+}
 switcher.addEventListener('click', switchMenu);
+//sliderShow();
 
 
 
