@@ -51,13 +51,19 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
+    new HtmlWebpackPlugin({      
       template: "src/templates/template.html",
-      title: "Kurtyny Paskowe Rewako"
+      title: "Kurtyny Paskowe PCV Rewako"
     }),
     new HtmlWebpackPlugin({
       filename: 'strip-courtains.html',
-      template: 'src/templates/strip_courtains.html'
-    })
+      template: 'src/templates/strip_courtains.html',
+      title: "Dobór i Montaż Kurtyny Paskowej Rewako"
+    }),
+    new HtmlWebpackPlugin({    
+      filename: 'template.html',  
+      template: "src/templates/template.html",
+      title: "Kurtyny Paskowe PCV Rewako"
+    }),
   ]
 }

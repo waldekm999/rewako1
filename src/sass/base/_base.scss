@@ -27,6 +27,9 @@ h1, h2{
     letter-spacing: 1.2rem;
     text-shadow: $text-shadow-grey;
     text-transform: uppercase; 
+    &.technical{
+        margin-top: $base-margin * 6;
+    }    
 }
 
 @media screen and (min-width: 600px) {

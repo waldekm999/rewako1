@@ -22,6 +22,11 @@
         text-shadow: $text-shadow-black; 
         align-self: center;               
         display: none;
+
+        &:hover{
+           
+            color: $dark-color;
+        }
         
         @include mq(small){       
             display: block;

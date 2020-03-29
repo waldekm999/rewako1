@@ -18,7 +18,7 @@
         padding: $base-padding;
         text-align: justify;        
         display: flex;
-        flex-direction: column;
+        flex-direction: column;        
 
         @include mq(medium) {
             
@@ -34,16 +34,21 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                align-self: center;
+
                 flex: 2 2;
             }
 
             &__img {
                 padding: $base-padding;
                 flex: 1 1;
+                align-self: center;
+               
 
                 & > img {
                     width: 100%;
                     height: auto;
+                    border-radius: 5px;
                 }
             }
     }  
@@ -206,6 +211,19 @@ div.rotation:hover span {
 .rotated{    
     transform: rotate(180deg);       
 }
+
+.technical-article{
+    margin-bottom: 800px;
+    
+}
+
+.technical-smaller{
+    font-size: $base-font-size * 0.85;
+}
+
+
+
+
 
 
 
