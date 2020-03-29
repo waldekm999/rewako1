@@ -1,0 +1,71 @@
+@import '../base/base';
+@import '../utils/mixins';
+
+table{
+    border-spacing: 0px;  
+    width: 80%;   
+}
+th, td{
+    
+    border-spacing: 0px;    
+    margin: 0px;
+    text-align: left;
+    background-color: #e0e9f0;
+    border-top: 1px solid #f1f8fe;
+    border-bottom: 1px solid #cbd2d8;
+    border-right: 1px solid #cbd2d8;
+}
+tr.head th{
+    color: #ffffff;
+    background-color: $main-color;
+    border-bottom: 2px solid #547ca0;
+    border-right: 1px solid #749abe;
+    border-top: 1px solid #90b4d6;
+    text-align: center;
+    text-shadow: -1px -1px 1px #666666;
+    letter-spacing: 0.15em;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+td{
+    text-shadow: 1px 1px 1px #ffffff;
+}
+tr.even td, tr.even th{
+    background-color: #e8eff5;
+    padding: 10px;
+}
+
+tr.oridinary td, tr.oridinary th{
+    padding: 10px;
+}
+
+tr.head th:first-child{
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+}
+tr.head th:last-child{
+
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: $base-margin;
+    font-size: $base-font-size * 0.7;
+
+    &>h6{
+        margin: $base-margin;
+        font-size: $base-font-size;
+        color: $dark-color;
+    }
+}
+
+
+
