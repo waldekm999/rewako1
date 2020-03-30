@@ -8,14 +8,20 @@
   <script src="https://kit.fontawesome.com/8696c3fad3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="wrapper">
-
-        <div class="navbar green">
-            <a href="template.html" class="navbar__item__logo"><img src="./images/Rewako-Kurtyny_paskowe-PCV-logo.png" alt="Rewako Kurtyny Paskowe PCV - logo firmy"></a>   
-        </div>        
+    <div class="switch">
+        <i class="fas fa-toggle-on switch__icon  display-off"></i>
+        <i class="fas fa-toggle-off switch__icon"></i>                
+      </div>
     
-
-    <article class="main-page technical-article">
+      <div class="navbar green">
+          <a href="template.html" class="navbar__item__logo"><img src="./images/Rewako-Kurtyny_paskowe-PCV-logo.png" alt="Rewako Kurtyny Paskowe PCV - logo firmy"></a>
+          <a href="#selection" class="navbar__item ">Dobór</a>
+          <a href="#montage" class="navbar__item ">Montaż</a>
+          <a href="sliding-courtains.html" class="navbar__item ">Kurtyny Przesuwne</a>
+          <a href="#" class="navbar__item ">Nasze Realizacje</a>
+          <a href="#contact" class="navbar__item ">Kontakt</a>
+      </div>      
+    <article class="main-page technical-article" id="selection">
         <section>
         <header>
         <h1 class="technical">Dobór kurtyn paskowych PCV</h1>        
@@ -115,7 +121,7 @@
         <header>
             <h2>Montaż kurtyny paskowej</h2>
         </header>
-        <div class="main-page__section">
+        <div class="main-page__section" id="montage">
             <div class="main-page__section__img">
                 <img src="./images/technical/kurtyna-paskowa-montaz.png" alt="Montaż pasów w kurtynie PCV" srcset="">
             </div>
@@ -139,9 +145,9 @@
     </article>
 
     
-
-    <footer class="footer technical-footer" id="contact">
-        <div class="main-page__section darken footer__social-networks">      
+    <div id="contact"></div>
+    <footer class="footer technical-footer" >
+        <div class="main-page__section darken footer__social-networks" >      
          <div class="main-page__section__text"><i class="fab fa-youtube medium-icon"></i></div>
          <div class="main-page__section__text"><i class="fab fa-facebook-f medium-icon"></i></div>
          <div class="main-page__section__text"><i class="fab fa-google-plus-square medium-icon"></i></div>
