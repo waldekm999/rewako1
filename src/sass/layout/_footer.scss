@@ -11,7 +11,7 @@
     }
 
 
-    &__main-info {        
+    &__main-info {                
         background-color: $dark-color;
         color: white;
         display: flex;
@@ -27,6 +27,8 @@
             }
 
             &__item {
+                text-decoration: none;
+                color: white;
                 margin: $base-margin/2 0;
 
                 &__o-nas {

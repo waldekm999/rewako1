@@ -12,9 +12,10 @@
     background-color: $base-background;
     
 
-    &__section {                
+    &__section {                        
         margin: 0;
         font-size: $base-font-size;
+        line-height: 1.4;
         padding: $base-padding;
         text-align: justify;        
         display: flex;
