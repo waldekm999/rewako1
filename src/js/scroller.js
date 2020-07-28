@@ -9,12 +9,16 @@ const navbar = document.querySelector('.navbar');
 export const hideEndShow = () => {
     if(html.scrollTop < 1000) {
         scroller.style.visibility = "hidden";
-        map.style.visibility = "hidden";       
+        if(map){
+        map.style.visibility = "hidden";  
+        }     
         if(window.innerWidth > 760) 
         navbar.style.backgroundColor = "";
     } else {
         scroller.style.visibility = "visible";
-        map.style.visibility = "visible";          
+        if(map){
+        map.style.visibility = "visible";
+        }
         if(window.innerWidth > 760)    
         navbar.style.backgroundColor = "#448D76";
     }   
