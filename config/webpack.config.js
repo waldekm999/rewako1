@@ -69,6 +69,11 @@ module.exports = {
       filename: 'sliding-courtains.html',
       template: 'src/templates/sliding-courtains.html',
       title: "Kurtyny przesuwne PCV Rewako"
+    }),
+    new HtmlWebpackPlugin({    
+      filename: 'contact.html',  
+      template: "src/templates/contact.html",
+      title: "Kurtyny Paskowe PCV Rewako - Kontakt"
     })
   ]
 }

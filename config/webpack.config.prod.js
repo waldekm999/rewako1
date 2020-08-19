@@ -91,6 +91,14 @@ module.exports = {
       }     
     }),
     new HtmlWebpackPlugin({
+      filename: 'contact.html',
+      template: 'src/templates/contact.html',
+      title: "Kurtyny PCV Rewako - Kontakt",
+      minify: {
+        collapseWhitespace: true
+      }     
+    }),
+    new HtmlWebpackPlugin({
       filename: 'strip-courtains.html',
       template: 'src/templates/strip-courtains.html',
       title: "Dobór i Montaż Kurtyny Paskowej Rewako",
@@ -113,7 +121,7 @@ module.exports = {
       minify: {
         collapseWhitespace: true
       }     
-    }),
+    }),    
     new MiniCssExtractPlugin({
       filename: '[name]-[contenthash].css'
     }),
