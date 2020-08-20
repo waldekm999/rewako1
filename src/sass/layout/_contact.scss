@@ -1,0 +1,27 @@
+@import '../base/base';
+@import '../utils/mixins';
+
+.contact{
+    width: 50%;
+    height: 75vh;
+    margin: 18vh 2vh 0 1vh;
+
+    &__form{
+        background-color: $dark-color;
+        display: flex;
+        flex-direction: row;
+
+        &__header{        
+            padding: $base-padding;        
+            z-index: 500;
+            color: $main-color-light;        
+            font-size: $base-font-size * 1.2;
+            margin: 0 auto;
+        }
+    }
+    
+    
+    
+        
+    
+}
