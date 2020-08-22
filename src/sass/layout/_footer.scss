@@ -32,6 +32,10 @@
                 color: white;
                 margin: $base-margin/2 0;
 
+                &:hover{
+                    color: $main-color;
+                }
+
                 &__o-nas {
                     text-align: justify;
                     letter-spacing: 0.1em;
