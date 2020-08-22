@@ -1,2 +1,31 @@
+@import '../base/base';
+@import '../utils/mixins';
+
+.slider__video{
+    display: none;
+
+    @include mq(medium) {         
+       display: block;
+    }
+}
+
+.slider__image {
+    display: block;
+
+    @include mq(medium) {         
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
