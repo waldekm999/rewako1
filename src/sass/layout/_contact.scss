@@ -2,15 +2,20 @@
 @import '../utils/mixins';
 
 .contact{
-    width: 50%;
+    
     height: 75vh;
     margin: 18vh 2vh 0 1vh;
+
+    @include mq(medium) {         
+      flex-direction: row;                                
+      width: 100%;
+  }
 
     &__form{
         background-color: $dark-color;
         color: $main-color-light;   
         display: flex;
-        flex-direction: column;
+        flex-direction: column;        
 
         &__header{        
             padding: $base-padding;        
