@@ -2,8 +2,7 @@
 @import '../utils/mixins';
 
 
-.main-page__header {                 
-    
+.main-page__header {    
 
     &__faker {
         width: 100%;
@@ -54,12 +53,13 @@
                     justify-content: center;
                 }                                
                 transition: 1s;                                
-                font-size: $base-font-size * 3;                              
+                font-size: $base-font-size * 2.2;                              
                 grid-column: 2 / 6;
-                grid-row: 5/ 7;
+                grid-row: 4 / 6;
                 color: $dark-color;
                 font-weight: bold;
                 text-shadow: $text-shadow-black;
+                text-align: center;
 
                 font-weight: bold;  
                 z-index: 2;  
@@ -80,7 +80,8 @@
                     display: flex;
                     flex-direction: column;                    
                     grid-column: 2 / 6;
-                    grid-row: 10 / 12;
+                    grid-row: 8 / 10;
+                    text-align: center;
                     color: $dark-color; 
                     font-size: 4vw;
                     font-weight: bold;  

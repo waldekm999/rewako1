@@ -23,4 +23,11 @@
 @import './utils/animations';
 @import './utils/mixins';
 
+.navbar__item__gallery{
+    display: none;
 
+    @include mq(small) {
+        display: block; 
+        z-index: 1;
+}
+}

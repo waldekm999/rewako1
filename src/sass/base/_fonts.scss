@@ -5,7 +5,16 @@
 
 
 .fas, .fab, .far{
-    font-size: $base-font-size * 4;
+    font-size: $base-font-size * 4;  
+    transition: ease-in-out 0.2s;  
+
+    &:hover{
+        transform: scale(0.95);
+    }
+}
+
+.small-icon {
+    font-size: $base-font-size;
 }
 
 .medium-icon {
@@ -15,11 +24,18 @@
 
 
 .fa-facebook-f {
-    color: rgb(22, 22, 236);  
+    color: $facebook-color;
     
+    &:hover{
+        color: darken($color: $facebook-color, $amount: 20%)
+    }
 }
 
 .fa-youtube, .fa-google-plus-square {
-    color: rgb(65, 5, 5);    
+    color: $google-color; 
     border-radius: 5px;
+
+    &:hover{
+        color: darken($color: $google-color, $amount: 5%)
+    }
 }
