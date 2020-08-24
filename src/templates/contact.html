@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Kurtyny Paskowe PCV Rewako Opole</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Roboto&display=swap&subset=latin-ext" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/8696c3fad3.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8696c3fad3.js" crossorigin="anonymous"></script> 
 </head>
 
 <body>  
@@ -36,7 +36,8 @@
                 <h6><a class="footer__main-info__item" href="tel:48510573668"><i class="fas fa-phone-volume small-icon"></i> Skontaktuj się z nami </a></h6>                
               </header>
               <div class="contact__form__body">
-                <form action="mailto:biuro@rewako.eu" method="post" enctype="text/plain"  accept-charset="windows-1250">
+                <!--<form action="mailto:biuro@rewako.eu" method="post" enctype="text/plain"  accept-charset="windows-1250"> -->
+                <form  action="https://formspree.io/meqrwdyk"  method="POST">
                   <div class="row">
                     <div class="col-25">
                       <label for="name">Imię i Nazwisko</label>
@@ -47,20 +48,25 @@
                   </div>
                   <div class="row">
                     <div class="col-25">
-                      <label for="email">E-mail</label>
+                      <label for="_replyto">E-mail</label>
                     </div>
                     <div class="col-75">
-                      <input type="text" id="email" name="email" placeholder="Twój email ...">
+                      <input type="text" id="email" name="_replyto" placeholder="Twój email ...">
                     </div>
                   </div>
+                  
+                    
+                   
+                  <!--
                   <div class="row">
                     <div class="col-25">
                       <label for="subject">Temat</label>
-                    </div>
+                  </div> 
                     <div class="col-75">                      
                         <input type="text" id="subject" name="subject" placeholder="Temat wiadomości ...">                     
                     </div>
                   </div>
+                  -->
                   <div class="row">
                     <div class="col-25">
                       <label for="message">Treść wiadomości</label>
@@ -71,8 +77,9 @@
                   </div>
                   <div class="row">
                     <input type="submit" value="Wyślij">
-                  </div>
+                  </div>                  
                   </form>
+
                   <p>Napisz do nas: </p><a class="footer__main-info__item" href="mailto: biuro@rewako.eu"><i class="far fa-envelope small-icon"></i> biuro@rewako.eu</a><p>Lub zadzwoń: </p>
          <a class="footer__main-info__item" href="tel:48510573668"><i class="fas fa-phone-volume small-icon"></i> 510 573-668</a>
                 </div>
@@ -83,6 +90,7 @@
       </article>
      
       <div style="height: 75vh; z-index: 0"></div>
+      
     
       
       <footer class="footer main-page technical-footer">
