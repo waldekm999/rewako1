@@ -6,21 +6,28 @@ const scroller = document.querySelector('.scroller');
 const map = document.querySelector('.map');
 const navbar = document.querySelector('.navbar');
 
+const logoGreen = document.querySelector('.logo__green')
+const logoWhite = document.querySelector('.logo__white')
+
 export const hideEndShow = () => {
     if(html.scrollTop < 1000) {
         scroller.style.visibility = "hidden";
         if(map){
         map.style.visibility = "hidden";  
-        }     
-        if(window.innerWidth > 760) 
+        }             
+        //if(window.innerWidth > 760) 
         navbar.style.backgroundColor = "";
+        logoWhite.style.display = "none";
+        logoGreen.style.display = "";
     } else {
         scroller.style.visibility = "visible";
         if(map){
         map.style.visibility = "visible";
         }
-        if(window.innerWidth > 760)    
+        //if(window.innerWidth > 760)    
         navbar.style.backgroundColor = "#448D76";
+        logoWhite.style.display = "block";
+        logoGreen.style.display = "none";
     }   
     
 }
