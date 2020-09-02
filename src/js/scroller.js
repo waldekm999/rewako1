@@ -10,7 +10,7 @@ const logoGreen = document.querySelector('.logo__green')
 const logoWhite = document.querySelector('.logo__white')
 
 export const hideEndShow = () => {
-    if(html.scrollTop < 1000) {
+    if(html.scrollTop < 900) {
         scroller.style.visibility = "hidden";
         if(map){
         map.style.visibility = "hidden";  

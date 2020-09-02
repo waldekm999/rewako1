@@ -22,7 +22,7 @@
         flex-direction: column;        
 
         @include mq(medium) {            
-            padding: $base-padding  $base-padding *10 $base-padding *6;
+            padding: $base-padding  $base-padding *10 $base-padding;
             flex-direction: row;
             align-items: flex-end;                             
         }

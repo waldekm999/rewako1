@@ -12,12 +12,19 @@ export const switchMenu = () => {
         item.style.display === "none" ? item.style.display = "block" :
         item.style.display = "none"
     });        
+    if (navbar.classList.contains('green')) {
+        logoGreen.style.display = "block";
+        logoWhite.style.display = "none";
+    } else {
+        logoGreen.style.display = "none";
+        logoWhite.style.display = "block";
+    }
     navbar.classList.toggle('green');    
     switchIconArr.forEach((icon) => icon.classList.toggle('display-off'));
-    logoGreen.style.display === "none" ? logoGreen.style.display = "block" :
-    logoGreen.style.display = "none";
-    logoWhite.style.display === "none" ? logoWhite.style.display = "block" :
-    logoWhite.style.display = "none"
+    //logoGreen.style.display === "none" ? logoGreen.style.display = "block" :
+    //logoGreen.style.display = "none";
+    //logoWhite.style.display === "none" ? logoWhite.style.display = "block" :
+    //logoWhite.style.display = "none"
 
 }
 

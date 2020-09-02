@@ -6,6 +6,7 @@
     z-index: 1;
 
     &__social-networks { 
+        
         width: 100%;      
         min-height: 35vh;        
         background-color: $main-color;        
@@ -19,7 +20,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: $base-padding *2 $base-padding;
+        padding: $base-padding $base-padding;
 
             &__column {
                 display: flex;
@@ -62,3 +63,10 @@
     z-index: -200;
 }
 
+.card{
+    color: rgb(147, 212, 187);
+    position: fixed;
+    bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
