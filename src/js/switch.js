@@ -7,10 +7,10 @@ const logoGreen = document.querySelector('.logo__green')
 const logoWhite = document.querySelector('.logo__white')
 
 export const switchMenu = () => {    
-    console.log("jestem");
-    navbarItemsArr.forEach((item) => {                
+    console.log("jestem");    
+    navbarItemsArr.forEach((item) => {                        
         item.style.display === "none" ? item.style.display = "block" :
-        item.style.display = "none"
+        item.style.display = "none";
     });        
     if (navbar.classList.contains('green')) {
         logoGreen.style.display = "block";
@@ -20,7 +20,7 @@ export const switchMenu = () => {
         logoWhite.style.display = "block";
     }
     navbar.classList.toggle('green');    
-    switchIconArr.forEach((icon) => icon.classList.toggle('display-off'));
+    //switchIconArr.forEach((icon) => icon.classList.toggle('display-off'));
     //logoGreen.style.display === "none" ? logoGreen.style.display = "block" :
     //logoGreen.style.display = "none";
     //logoWhite.style.display === "none" ? logoWhite.style.display = "block" :
